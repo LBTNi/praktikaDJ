@@ -1,0 +1,188 @@
+body {
+    background: #1A1A1C;
+    font-family: Accuratist;
+    color: #2ED4CE;
+}
+
+@font-face {
+  font-family: "Accuratist";
+  src: url("Accuratist.otf");
+}
+
+navigation {
+    color: #2ED4CE;
+    float: left;
+    background: #1A1A1C;
+    width: 300px;
+    padding: 2.5%;
+    position: fixed;
+    height: 100vh;
+    border-right: 5px solid #2ED4CE;
+    min-width: 300px;
+}
+
+navigation img {
+    width: 180px;
+    margin-left: 5px;
+    min-width: 180px;
+}
+
+navigation .logo {
+    font-size: 55px;
+    font-family: Accuratist;
+    margin-left: -10px;
+    font-weight: bold;
+    position: relative;
+    top: 13px;
+}
+
+navigation h3 {
+    color: #2ED4CE;
+    margin-top: 30px;
+    font-size: 29px;
+}
+
+navigation a{
+    text-decoration:none;
+}
+
+navigation ul {list-style: none}
+navigation ul li {
+    font-size: 18px;
+    color: #2ED4CE;
+    display: block;
+    margin-top: 20px;
+    margin-left: -15px;
+    transition: transform .6s ease;
+}
+
+.buttonnav {
+    margin-left: -34px;
+}
+
+.btn-bl{
+    background: #2ED4CE;
+    color:  #1A1A1C;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+    border-color: #2ED4CE;
+}
+
+.btn-bl:hover{
+    border-color: #2ED4CE;
+    background: #64EBE6;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.btn-dt{
+    background: #2ED4CE;
+    color:#1A1A1C;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+    border-color: #2ED4CE;
+}
+
+.btn-dt:hover{
+    background: #2ED4CE;
+    border-color: #2ED4CE;
+}
+
+navigation ul li:hover, navigation ul a:hover {
+    color: #64EBE6;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+main .features {
+    margin-left: 3%;
+    float: left;
+    color: #2ED4CE;
+    margin-top: 75px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1{font-size: 50px; margin-left: 44%;}
+main .features p{
+    max-width: 400px;
+    margin-left: 55%;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 65%;
+    margin: 20px 36.4%;
+    text-align: center;
+    color: #2ED4CE;
+    background-color: #0F1314;
+    border-color: #2ED4CE;
+}
+
+.title{
+    margin-left: 37%;
+}
+
+form {
+    margin-left: 50%;
+    width: 600px;
+    margin-top: 30px;
+}
+
+audio{
+    outline: none;
+    width: 90%
+}
+
+.button-info{
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+.button-del{
+    margin-left: -10%;
+    margin-top: 2%;
+}
+
+.button-add{
+    margin-left: -10%;
+    margin-top: 2%;
+}
+
+audio{
+    margin-top: 16px;
+    width: 90%;
+}
+
+p{
+    font-size: 20px;
+}
+
+#telegram img,
+#inst img,
+#vk img{
+    width:60px;
+    margin-left: 44%;
+}
+
+#inst img{
+   margin-top: -87px;
+}
+
+ul{list-style: none}
+#faq li{
+    margin-left: 36%;
+    margin-top: 17px;
+    font-size: 20px;
+}
+
+.music{
+    margin-left: -10%;
+}
+
+.form{
+    margin-left: 10%;
+}

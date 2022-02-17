@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Удаление из плейлиста{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="button-del">
+                <button class="btn btn-danger" type="submit" id="delete">Удалить</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Плеер{% endblock %}
+{% block content %}
+    <div class="features">
+        <div class="music"><h1>Плеер</h1></div>
+        {% if music %}
+            {% for el in music %}
+                 <div class="alert alert-warning">
+                     <h2>{{ el.title }}</h2>
+                     <div class="audioplayer" id="audio-player-container">
+                         <audio controls>
+                             <source src="\media\{{el.audio}}" type="audio/mp3">
+                         </audio>
+                     </div>
+                     <a href="{% url 'music-detail' el.id %}" class="btn btn-info btn-dt" id="info">Описание</a>
+                 </div>
+            {% endfor %}
+        {% else %}
+            <p>У вас нет треков в плейлисте!</p>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Контакты</h1><br>
+        <p>Лебедь Никита Владимирович. 18 лет. Учусь в технологическом колледже имени Янки Купалы на специальность тестировщик ПО.</p>
+        <br>
+        <a id="telegram" href="https://t.me/NikitosLebedos"><img src="{% static 'main/img/telegram.png' %}"></a>
+        <a id="vk" href="https://vk.com/id352497075"><img src="{% static 'main/img/вк.png' %}"></a>
+        <a id="inst" href="https://instagram.com/leb_nukut/"><img src="{% static 'main/img/instagram.png' %}"></a>
+    </div>
+{% endblock %}

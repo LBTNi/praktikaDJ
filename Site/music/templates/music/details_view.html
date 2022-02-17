@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Плейлист{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.date }}</p>
+        <p>{{ article.full_text }}</p>
+        <p>{{ article.audio }}</p>
+        <div class="button-info">
+            <a href="{% url 'music-delete' article.id %}" class="btn btn-danger" id="del">Удалить</a>
+            <a href="{% url 'music-update' article.id %}" class="btn btn-success">Редактировать</a>
+        </div>
+    </div>
+{% endblock %}
